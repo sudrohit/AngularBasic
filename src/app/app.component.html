@@ -1,0 +1,19 @@
+<div>
+  <h1>
+    {{'HOME.TITLE' | translate}}
+  </h1>
+</div>
+
+<div>
+  <mat-toolbar color="primary" class="fixed-header">
+    <mat-toolbar-row>
+      <a mat-button routerLink="/firstcomponent" routerLinkActive="active">First</a>
+      <a mat-button routerLink="/secondcomponent">Second</a>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <main>
+    <router-outlet style="margin-top: 80px;"></router-outlet>
+  </main>
+
+  <router-outlet></router-outlet>
+</div>
