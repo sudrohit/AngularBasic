@@ -1,3 +1,18 @@
-<p>
-  first works!!
-</p>
+<table style="width:100%">
+  <thead>
+    <tr >
+      <th>title</th>
+      <th>url</th>
+      <th>author</th>
+      <th>created_at</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let data of serviceData">
+      <td>
+        {{data.title}}
+      </td>
+    </tr>
+  </tbody>
+  </table>
